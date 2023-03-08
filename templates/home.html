@@ -8,13 +8,14 @@
     <title>Document</title>
 </head>
 <body>
+
   <h1>Vice Versa</h1>
-  <p>some</p>
-  <form action="/action_page.php">
+  <form action="{% url 'reverse' %}"> <!--путь куда ходим быть перенаправленны по какой url-->
     <textarea name="message" rows="20" cols="50"></textarea>
     <br><br>
     <input type="submit" name="reverse" value="Reverse">
   </form>
+
 
 </body>
 </html>

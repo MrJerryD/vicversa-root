@@ -20,4 +20,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
+    path('reversed/', views.reverse, name='reverse'),
+    #name параметр это тотже url, на план б если основной будет с ошибкой как сейчас
+    # указано reversed, а шаблон с html у нас reverse, в name мы это указали и будет работать
 ]
